@@ -1,7 +1,14 @@
-html,body,body>contenu {
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
     height: 100%;
+}
+.contenu {
+    height: 100%;
+    position: relative;
 }
 header {
     display: flex;
@@ -22,20 +29,42 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
+    width: 100%;
+
+
+    padding: 3rem;
+
+}
+
+.main__content {
     border: solid 5px black;
-    background-color: dimgray;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, grey, rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: fit-content;
+    text-justify: distribute;
+}
+
+.gs, .date, .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__content p {
+    text-justify: distribute;
 }
 h2{
     font-size: 2rem;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
-    color: red;
+    white-space: nowrap;
+    color: black;
 }
 .p {
     font-size: 0.75rem;
@@ -45,15 +74,12 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0%;
-    padding: 0%;
+    padding: 1rem;
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, grey, rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     font-size: 3rem;
     color: black;
-    margin-top: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 100%;
 
 }
